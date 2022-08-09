@@ -18,17 +18,25 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Rubyness
-email: kobus@translate3d.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Commen Ruby and Rails patterns, conventions, ideas, sytax sugar I like that makes me smile when I look at the Ruby code in front of me.
+title: &title
+  Rubyness
+description: &description >- # this means to ignore newlines until "baseurl:"
+  Ruby and Rails mistakes I've made with ideas, conventions, good practices and syntax sugar to improve it 🤓
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kobusjoubert.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: kobuski
-github_username:  kobusjoubert
+email: &email
+  kobus@translate3d.com
+github_username: &github_username
+  kobusjoubert
+twitter_username: &twitter_username
+  kobuski
+number_of_posts: 10
 
 # Build settings
-theme: minima
+# theme: minima
+# remote_theme: piharpi/jekyll-klise
+theme: klise
+
 plugins:
   - jekyll-feed
 
@@ -51,3 +59,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Theme specific.
+author:
+  name: *title
+  bio: *description
+  avatar: /assets/img/avatar.png
+  email: *email
+  username: *github_username
+  github: *github_username
+  # twitter:
+  # facebook:

@@ -1,0 +1,30 @@
+// Theme overrides
+
+// Author
+.author {
+  .author-avatar {
+    width: 180px;
+    height: 180px;
+    background-color: transparent;
+  }
+}
+
+// Codeblock Theme
+.red {
+  .highlight {
+    pre {
+      background-color: #3b1e1e;
+//      background-color: #4a2424;
+//      background-color: #4d3a3a;
+    }
+  }
+}
+.green {
+  .highlight {
+    pre {
+      background-color: #223b1e;
+//      background-color: #244a28;
+//      background-color: #3a4d3c;
+    }
+  }
+}
