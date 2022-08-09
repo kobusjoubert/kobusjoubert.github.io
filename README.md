@@ -1,6 +1,6 @@
 # GitHub Page
 
-GitHub page where I'll add Ruby, Rails and Hotwire mistakes I've made with ideas, conventions, good practices and syntax sugar to improve it all 🤓
+GitHub page where I'll add Ruby, Rails and Hotwire mistakes I've made with ideas, conventions, good practices and syntax sugar to improve it all. 🤓
 
 ## Usage
 
