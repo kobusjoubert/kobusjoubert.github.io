@@ -43,7 +43,7 @@ When raising an exception, handle it in the same controller, or the parent contr
 
 <div class='green'>
 {% highlight ruby %}
-# app/controller/application_controller.rb
+# app/controllers/application_controller.rb
 class ApplicationController < ActionController::Base
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
