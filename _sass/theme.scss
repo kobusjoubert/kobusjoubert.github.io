@@ -28,3 +28,38 @@
     }
   }
 }
+
+// When mouse block a text set this color
+mark,
+::selection {
+  background: $text-link-blue;
+  color: $white;
+}
+
+
+// Codeblock Theme
+pre.highlight, pre {
+  margin: 0 -30px;
+  @include media-query($on-mobile) {
+    margin: 0 calc(51% - 51vw);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 -15px;
+  }
+  border: 1px solid rgba(128,128,128,0.1);
+  background-color: #1a1b21;
+  border-radius: 0px;
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+
+  > code {
+    width: 100%;
+    max-width: 60rem;
+  }
+}
+
+figure.highlight {
+  padding-top: $spacing-full - 15;
+  padding-bottom: $spacing-full - 15;
+}
