@@ -7,7 +7,7 @@ GitHub page where I'll add Ruby, Rails and Hotwire mistakes I've made with ideas
 Start the server.
 
 ```
-bundle exec jekyll server
+bin/dev
 ```
 
 Now browse to <http://localhost:4000>
