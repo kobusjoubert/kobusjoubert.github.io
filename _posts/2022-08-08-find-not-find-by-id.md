@@ -25,6 +25,7 @@ end
 <p><hr></p>
 
 Use `find` instead of `find_by_id`.
+<!--more-->
 
 <div class='green'>
 {% highlight ruby %}

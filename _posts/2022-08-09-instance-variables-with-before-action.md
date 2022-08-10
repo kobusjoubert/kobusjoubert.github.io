@@ -26,6 +26,8 @@ end
 
 Use a `before_action` to set instance variables used in more than one action.
 
+<!--more-->
+
 <div class='green'>
 {% highlight ruby %}
 # app/controllers/notes_controller.rb
