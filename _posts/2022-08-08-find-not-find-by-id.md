@@ -35,8 +35,6 @@ You can use `find` instead of `find_by_id`.
 def set_note
   @note = Note.find(params[:id])
 end
-
-...
 {% endhighlight %}
 </div>
 

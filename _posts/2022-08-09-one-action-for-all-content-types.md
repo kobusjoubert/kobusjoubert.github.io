@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "1️⃣ One action for all content types"
+title: "♳ One action for all content types"
 tags: rails controller
 ---
 
