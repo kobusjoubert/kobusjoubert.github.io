@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Instance variables with before_action 🏹"
+title: "🏹 Instance variables and before_action"
 tags: rails controller
 ---
 
@@ -8,12 +8,12 @@ tags: rails controller
 {% highlight ruby %}
 # app/controllers/notes_controller.rb
 class NotesController < ApplicationController
-  # GET /notes/1
+  # GET /notes/:id
   def show
     @note = Note.find(params[:id])
   end
 
-  # GET /notes/1/edit
+  # GET /notes/:id/edit
   def edit
     @note = Note.find(params[:id])
   end
@@ -24,7 +24,7 @@ end
 
 <p><hr></p>
 
-Use a `before_action` to set instance variables used in more than one action.
+You can use a `before_action` to set instance variables used in more than one action.
 
 <!--more-->
 
@@ -34,10 +34,10 @@ Use a `before_action` to set instance variables used in more than one action.
 class NotesController < ApplicationController
   before_action :set_note, only: %i[show edit]
 
-  # GET /notes/1
+  # GET /notes/:id
   def show; end
 
-  # GET /notes/1/edit
+  # GET /notes/:id/edit
   def edit; end
 
   private

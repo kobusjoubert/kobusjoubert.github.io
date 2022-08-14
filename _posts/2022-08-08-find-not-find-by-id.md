@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "🔍 find(1), not find_by_id(1)"
+title: "🔍 Use find, not find_by_id"
 tags: rails controller
 ---
 
@@ -10,7 +10,7 @@ tags: rails controller
 class NotesController < ApplicationController
   before_action :set_note
 
-  # GET /notes/1
+  # GET /notes/:id
   def show; end
 
   private
@@ -24,7 +24,8 @@ end
 
 <p><hr></p>
 
-Use `find` instead of `find_by_id`.
+You can use `find` instead of `find_by_id`.
+
 <!--more-->
 
 <div class='green'>
