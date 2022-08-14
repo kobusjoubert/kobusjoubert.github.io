@@ -1,5 +1,8 @@
 // Theme overrides
 
+// Width of the content area
+$narrow-size-post: 1000px;
+
 // Author
 .author {
   .author-avatar {
@@ -62,4 +65,15 @@ pre.highlight, pre {
 figure.highlight {
   padding-top: $spacing-full - 15;
   padding-bottom: $spacing-full - 15;
+}
+
+// Post wrapper
+.wrapper.post {
+  max-width: -webkit-calc(#{$narrow-size-post} - (#{$spacing-full} * 2));
+  max-width: calc(#{$narrow-size-post} - (#{$spacing-full} * 2));
+
+  @include media-query($on-mobile) {
+    max-width: -webkit-calc(#{$narrow-size-post} - (#{$spacing-full}));
+    max-width: calc(#{$narrow-size-post} - (#{$spacing-full}));
+  }
 }
