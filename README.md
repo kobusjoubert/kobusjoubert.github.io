@@ -2,6 +2,7 @@
 
 GitHub page where I'll add Ruby, Rails and Hotwire mistakes I've made with ideas, conventions, good practices and syntax sugar to improve it all. 🤓
 
+Visit the hosted site here. 👉 <https://kobusjoubert.github.io>
 ## Usage
 
 Start the server.
