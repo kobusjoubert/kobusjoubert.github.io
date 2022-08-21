@@ -24,7 +24,9 @@ class NotesController < ApplicationController
     @note = Note.find(params[:id])
   end
 end
+{% endhighlight %}
 
+{% highlight ruby %}
 # app/views/notes/show.html.erb
 <%= link_to 'Download', download_note_path(@note) %>
 {% endhighlight %}
@@ -56,7 +58,9 @@ class NotesController < ApplicationController
     @note = Note.find(params[:id])
   end
 end
+{% endhighlight %}
 
+{% highlight ruby %}
 # app/views/notes/show.html.erb
 <%= link_to 'Download', note_path(@note, format: :text) %>
 {% endhighlight %}
